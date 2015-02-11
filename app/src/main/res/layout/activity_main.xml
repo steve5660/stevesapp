@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">  <!--width/height changed from match to fill. orientation changed from horizontal -->
+    <!--
+    //Defaults in the blank Activity created with the project:
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" /-->
+
+    <!-- ADD A NEW ENTRY -->
+    <TextView
+        android:text="@string/entry_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"> <!-- Check this doesn't make one form fill screen! -->
+        <EditText
+        android:id="@+id/edit_message"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message" />
+
+        <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_button"
+        />
+    </LinearLayout>  <!-- android:onSend removed from the button xml-->
+
+    <!-- UPDATE A DATA ENTRY FORM -->
+    <TextView
+        android:text="@string/update_directions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:id="@+id/update_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="45px"
+            />
+        <Button
+            android:id="@+id/retrieve_button"
+            android:text="@string/retrieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/update_message"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            />
+        <Button
+            android:id="@+id/update_button"
+            android:text="@string/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <!-- THE DATA TABLE -->
+    <TableLayout
+        android:id="@+id/data_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+            <TextView
+                android:text="@string/th_id"
+                android:minWidth="50px"
+                />
+            <TextView
+                android:text="@string/th_message"
+                />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

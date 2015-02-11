@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Steve\'s App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Enter text</string>
+    <string name="add_button">Add</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="action_search">Search</string>
+    <string name="entry_text">Enter text here</string>
+
+    <string name="update_directions">To update a row, type the "id" of the row in the first field and type the new information into the next two fields.</string>
+    <string name="retrieve">Get</string>
+    <string name="update">Update</string>
+    <string name="th_id">ID</string>
+    <string name="th_message">Message</string>
+
+</resources>
